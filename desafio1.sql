@@ -130,7 +130,7 @@ VALUES
 (10,"2020-03-06 11:22:33",1),
 (10,"2022-08-05 08:05:17", 2),
 (7, "2020-01-02 07:40:33", 2),
-(7, "2020-11-13 16:55:13",3),
+(10, "2020-11-13 16:55:13",3),
 (2, "2020-12-05 18:38:30", 3),
 (8, "2021-08-15 17:10:10", 4),
 (8, "2022-01-09 01:44:33", 5),
@@ -153,7 +153,7 @@ FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuario (usuario_id)
 )
 engine = InnoDB;
 INSERT INTO SpotifyClone.seguindo_artista( usuario_id, artista_id)
-VALUES  
+VALUES 
 (1,1),
 (1,2),
 (1,3),
