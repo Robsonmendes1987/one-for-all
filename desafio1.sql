@@ -153,7 +153,7 @@ FOREIGN KEY (usuario_id) REFERENCES SpotifyClone.usuario (usuario_id)
 )
 engine = InnoDB;
 INSERT INTO SpotifyClone.seguindo_artista( usuario_id, artista_id)
-VALUES 
+VALUES  
 (1,1),
 (1,2),
 (1,3),
