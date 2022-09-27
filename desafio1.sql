@@ -21,11 +21,11 @@ CREATE TABLE  SpotifyClone.artista (
 engine = InnoDB;
 INSERT INTO SpotifyClone.artista (nome) VALUES
 ('Beyoncé'),
-('Queen'),
 ('Elis Regina'),
+('Nina Simone'),
+('Queen'),
 ('Baco Exu do Blues'),
-('Blind Guardian'),
-('Nina Simone');
+('Blind Guardian');
 
 CREATE TABLE  SpotifyClone.album (
   album_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -37,13 +37,13 @@ engine = InnoDB;
 INSERT INTO SpotifyClone.album (titulo,artista_id)
 VALUES
 ('Renaissance',1),
-('Jazz',2),
-('Hot Space',2),
-('Falso Brilhante',3),
-('Vento de Maio',3),
-('QVVJFA?',4),
-('Somewhere Far Beyond',5),
-('I Put A Spell On You',6);
+('Hot Space',4),
+('Jazz',4),
+('Falso Brilhante',2),
+('Vento de Maio',2),
+('QVVJFA?',5),
+('Somewhere Far Beyond',6),
+('I Put A Spell On You',3);
 
 CREATE TABLE  SpotifyClone.album_artista(
 album_id INT ,
@@ -57,13 +57,13 @@ engine = InnoDB;
 INSERT INTO SpotifyClone.album_artista (album_id, artista_id)
 VALUES
 (1,1),
-(2,2),
-(3,2),
-(4,3),
-(5,3),
-(6,4),
-(7,5),
-(8,6);
+(2,4),
+(3,4),
+(4,2),
+(5,2),
+(6,5),
+(7,6),
+(8,3);
 
 CREATE TABLE  SpotifyClone.cancao(
   id_cancao INT  PRIMARY KEY  AUTO_INCREMENT,
@@ -156,16 +156,15 @@ INSERT INTO SpotifyClone.seguindo_artista( usuario_id, artista_id)
 VALUES 
 (1,1),
 (1,2),
-(1,3),
+(1,4),
 (2,1),
-(2,3),
-(3,2),
-(4,4),
-(5,5),
+(2,2),
+(3,4),
+(4,5),
+(5,3),
 (5,6),
 (6,1),
-(6,6),
-(7,6),
-(9,3),
-(10,2);
-
+(6,3),
+(7,3),
+(9,2),
+(10,4);
