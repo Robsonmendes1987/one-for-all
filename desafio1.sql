@@ -3,13 +3,13 @@ CREATE DATABASE IF NOT EXISTS SpotifyClone;
 CREATE TABLE  SpotifyClone.plano (
  plano_id  INT PRIMARY KEY AUTO_INCREMENT,
  plano VARCHAR(45) NOT NULL,
- valor_plano DOUBLE NOT NULL
+ valor_plano  DECIMAL(5,2) NOT NULL
 )
 
 engine = InnoDB;
 INSERT INTO SpotifyClone.plano (plano, valor_plano)
 VALUES 
-('gratuito', 00.00),
+('gratuito', 0.00),
 ('familiar', 7.99),
 ('pessoal', 6.99),
 ('universitário', 5.99);
